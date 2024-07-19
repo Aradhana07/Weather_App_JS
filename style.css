@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(221, 239, 247);
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 18px 0;
+  text-shadow: 5px 5px skyblue;
+}
+h2{
+  text-align: center;
+}
+.container {
+  display: flex;
+  gap: 80px;
+  padding: 30px;
+}
+.weather-input {
+  width: 600px;
+}
+
+.weather-input input {
+  height: 46px;
+  width: 100%;
+  outline: none;
+  font-size: 1.07rem;
+  padding: 0 17px;
+  margin: 10px 0 20px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.weather-input input:focus {
+  padding: 0 16px;
+  border: 2px solid #223272;
+}
+#recentCitiesContainer {
+  font-weight: bold;
+  height:22px;
+  margin-left: -10rem;
+  margin-top: 2rem;
+}
+
+.weather-input button {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: skyblue;
+}
+.separator{
+  border: 1px solid grey;
+  margin: 10px;
+  
+}
+.weather-input .search-btn:hover {
+  background: #0bd0e6;
+}
+.weather-input .location-btn {
+  background:  #6C757D;
+  
+}
+.weather-input .location-btn:hover {
+  background: #0966c3;
+}
+.weather-data {
+  width: 100%;
+}
+
+.weather-data .current-weather {
+  background: skyblue;
+  border-radius: 5px;
+  padding: 20px 70px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.weather-data h6 {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.current-weather .icon {
+  text-align: center;
+}
+.current-weather .icon img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+.current-weather .icon h6 {
+  margin-top: -10px;
+  text-transform: capitalize;
+}
+.days-forecast h2 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.days-forecast .weather-cards {
+  display: flex;
+  gap: 30px;
+}
+.weather-cards .card {
+  color: #fff;
+  padding: 20px 18px;
+  list-style: none;
+  width: calc(100% / 6);
+  background: #6C757D;
+  border-radius: 5px;
+}
+.weather-cards .card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+hr{
+  margin: 10px;
+}
+
+
+@media(max-width: 1400px){
+  .weather-data .current-weather{
+    padding: 20px;
+  }
+  .weather-cards{
+    flex-wrap: wrap;
+  }
+  .weather-cards .card{
+    width: calc(100%/4-15px);
+  }
+
+}
+
+@media(max-width:1200px){
+  .weather-cards .card{
+    width: calc(100%/3-15px);
+  }
+}
+
+@media(max-width:950px){
+  .weather-input{
+    width: 450px;
+  }
+  .weather-cards .card{
+    width: calc(100% / 2 -10px);
+  }
+}
+
+@media(max-width:750px){
+  .container{
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .weather-input{
+    width: 100%;
+  }
+}
+
+  
+
+
+
+
+
