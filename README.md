@@ -7,6 +7,7 @@
 #Installation
 #Usage
 #API Reference
+#demo
 
 #Get current weather information by city name.
 #Display weather conditions such as temperature, humidity, and weather description.
@@ -30,3 +31,6 @@
  
 #API Reference
 The app uses the OpenWeatherMap API. You need an API key to use this service. Sign up at OpenWeatherMap and get your API key.
+
+#Demo
+*See my project from here https://aradhana07.github.io/Weather_App_JS/
